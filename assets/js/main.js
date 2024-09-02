@@ -1,12 +1,20 @@
-const navLinks = document.querySelectorAll('nav a');
-// Loop  each link
-navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-        // Remove the 'active' class from all links
-        navLinks.forEach(link => link.classList.remove('active'));
-        // Add the 'active' class to the clicked link
-        this.classList.add('active');
+const links = document.querySelectorAll('nav ul li a');
+
+function setActiveLink(index) {
+    links.forEach((link, i) => {
+        if (i === index) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
     });
+}
+
+window.addEventListener('scroll', () => {
+    let scrollPosition = window.scrollY;
+    let step = 500;
+    let activeIndex = Math.floor(scrollPosition / step);
+    setActiveLink(activeIndex);
 });
 
 // Show and hide the barContainer when clicking on the menu icon or anywhere outside it
