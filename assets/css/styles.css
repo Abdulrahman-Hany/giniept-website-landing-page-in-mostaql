@@ -670,6 +670,7 @@ form button.cta-button {
     font-stretch: normal;
     font-style: normal;
     line-height: 1.4;
+    margin-left: 16px;
     letter-spacing: normal;
     text-align: left;
     color: #fff;
