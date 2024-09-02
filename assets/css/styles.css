@@ -595,7 +595,7 @@ form button.cta-button {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 20px 0px;
+    padding: 20px 0px 0;
     border-bottom: 1px solid #ffffffec;
 }
 .logo-footer,
