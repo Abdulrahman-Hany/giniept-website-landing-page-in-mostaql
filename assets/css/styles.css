@@ -7,26 +7,45 @@
  * #COLOR VARIABLES
 \*-----------------------------------*/
 :root {
-    --primary-color: #7B63C2;       /* اللون الأساسي */
-    --secondary-color: #6387C1;     /* اللون الثانوي */
-    --hover-color:#364A6A;          /*لون الهوفر خاص بي الينك*/
-    --background-color: #cfdaec;    /* لون الخلفية */
-    --text-color: #5E5E5E;          /* لون النص */
-    --heading-color: #364A6A;       /* لون العناوين */
-    --selection-text: #fff;         /* لون نص التحديد و النصوص */
-    --border-color: #ffffff6f;      /* لون الحدود */
-    --card-shadow-color: rgba(0, 0, 0, 0.1); /* لون ظل الكروت */
-    --card-text-color: #0E0E0E;     /* لون نص الكروت */
-    --highlight-color: #9c68e6;     /* لون التمييز */
-    --hero-section-heading-stroke: #7B63C2; /* لون الحواف للنص في الهيرو */
+    --primary-color: #7B63C2;
+    /* اللون الأساسي */
+    --secondary-color: #6387C1;
+    /* اللون الثانوي */
+    --hover-color: #364A6A;
+    /*لون الهوفر خاص بي الينك*/
+    --background-color: #cfdaec;
+    /* لون الخلفية */
+    --text-color: #5E5E5E;
+    /* لون النص */
+    --heading-color: #364A6A;
+    /* لون العناوين */
+    --selection-text: #fff;
+    /* لون نص التحديد و النصوص */
+    --border-color: #ffffff6f;
+    /* لون الحدود */
+    --card-shadow-color: rgba(0, 0, 0, 0.1);
+    /* لون ظل الكروت */
+    --card-text-color: #0E0E0E;
+    /* لون نص الكروت */
+    --highlight-color: #9c68e6;
+    /* لون التمييز */
+    --hero-section-heading-stroke: #7B63C2;
+    /* لون الحواف للنص في الهيرو */
     --button-hover-bg: linear-gradient(to right, var(--highlight-color), var(--secondary-color));
-    --form-border-color: #4b59d4;   /* لون حدود الفورم */
-    --plan-border-color: #6a11cb;   /* لون حدود خطط الأسعار */
-    --plan-text-color: rgba(33, 39, 42, 0.6); /* لون النصوص في خطط الأسعار */
-    --plan-price-color: #21272A;    /* لون السعر في خطط الأسعار */
-    --button-icon-color: #ccc;      /* لون الأيقونات في الأزرار */
-    --input-border-color: #b4b4b4;  /* لون حدود الإدخال */
-    --logo-text-color: #3E3E3E;     /* لون النصوص بجانب الشعار */
+    --form-border-color: #4b59d4;
+    /* لون حدود الفورم */
+    --plan-border-color: #6a11cb;
+    /* لون حدود خطط الأسعار */
+    --plan-text-color: rgba(33, 39, 42, 0.6);
+    /* لون النصوص في خطط الأسعار */
+    --plan-price-color: #21272A;
+    /* لون السعر في خطط الأسعار */
+    --button-icon-color: #ccc;
+    /* لون الأيقونات في الأزرار */
+    --input-border-color: #b4b4b4;
+    /* لون حدود الإدخال */
+    --logo-text-color: #3E3E3E;
+    /* لون النصوص بجانب الشعار */
 }
 /*-----------------------------------*\
  * #BASIC REST
@@ -80,12 +99,10 @@ header {
     transition: all .4s;
     display: none;
 }
-.container i:hover{
+.container i:hover {
     color: var(--primary-color);
 }
-
-
-.bar-container{
+.bar-container {
     position: absolute;
     left: 10px;
     padding: 10px;
@@ -95,10 +112,10 @@ header {
     background: #fffffffa;
     transition: all .5s;
 }
-.bar-container.active{
+.bar-container.active {
     display: block;
 }
-.bar-nav{
+.bar-nav {
     display: block;
     width: 149px;
 }
@@ -140,24 +157,24 @@ header {
     background: linear-gradient(to left, var(--primary-color) 1%, var(--secondary-color) 97%);
 }
 .cta-button-hreo {
-width: 155px;
-  height: 56px;
-  flex-grow: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  border-radius: 12px;
-  color: var(--selection-text);
-  background: linear-gradient(to left, var(--primary-color) 1%, var(--secondary-color) 97%);
+    width: 155px;
+    height: 56px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-radius: 12px;
+    color: var(--selection-text);
+    background: linear-gradient(to left, var(--primary-color) 1%, var(--secondary-color) 97%);
 }
 .cta-button:hover {
     background: linear-gradient(to right, var(--highlight-color), var(--secondary-color));
 }
 .cta-button-hreo i {
     margin-right: 10px;
-    margin-top: 6px;
+    margin-top: 9px;
     transition: all .4s;
 }
 .cta-button-hreo:hover i {
@@ -197,19 +214,17 @@ nav a:hover,
 nav a.active {
     color: var(--hover-color);
 }
-.bar-nav a.active::after{
+.bar-nav a.active::after {
     display: none;
 }
-
 /* ======= Logo ======= */
 .container .logo {
     margin-top: 15px;
-} 
+}
 .logo img {
     height: 44px;
     cursor: pointer;
 }
-
 /*-----------------------------------*\
  * #SECTION-HERO
 \*-----------------------------------*/
@@ -243,7 +258,7 @@ nav a.active {
 .text-content h1 span {
     color: transparent;
     letter-spacing: 2px;
-    -webkit-text-stroke: 2px var(--hero-section-heading-stroke);
+    -webkit-text-stroke: 3px var(--hero-section-heading-stroke);
 }
 .text-content p {
     color: var(--text-color);
@@ -261,7 +276,6 @@ nav a.active {
     max-width: 66%;
     height: auto;
 }
-
 /*-----------------------------------*\
  * #SECTION-FEATURES
 \*-----------------------------------*/
@@ -284,17 +298,17 @@ nav a.active {
     font-size: 18px;
     color: var(--card-text-color);
 }
-.section-plans{
+.section-plans {
     text-align: center;
     width: 67%;
     margin: 50px auto;
 }
 .section-plans h1 {
-    height: 66px;
+    height: 60px;
     align-self: stretch;
     flex-grow: 0;
-    font-family: sans-serif;
-    font-size: 42px;
+    font-family: 'Roboto' !important;
+    font-size: 45px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -302,13 +316,12 @@ nav a.active {
     letter-spacing: normal;
     text-align: center;
     color: #6387c1;
-
 }
 .section-plans p {
     font-size: 18px;
+    font-family: Cairo;
     color: var(--card-text-color);
 }
-
 /* ======= cards ======= */
 .cards {
     display: flex;
@@ -334,7 +347,7 @@ nav a.active {
     margin-right: 30px;
 }
 .card-text li {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 600;
     color: var(--card-text-color);
 }
@@ -351,7 +364,6 @@ nav a.active {
     max-width: 100%;
     border-radius: 10px;
 }
-
 /*-----------------------------------*\
  * #PLANS-CONTAINER
 \*-----------------------------------*/
@@ -384,50 +396,64 @@ nav a.active {
     color: rgba(33, 39, 42, 0.6);
 }
 .plan-box .price {
-    flex-grow: 0;
-    font-family: sans-serif;
-    font-size: 45px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.1;
-    letter-spacing: normal;
+    color: #21272A;
     text-align: center;
-    color: #21272a;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 116%;
 }
 .plan-box .title-plan {
-    color: var(--plan-price-color);
-    font-family: Roboto;
+    width: 108px;
+    height: 20px;
+    flex-grow: 0;
+    font-family: 'Roboto';
     font-size: 14px;
-    margin-bottom: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: center;
+    position: relative;
+    bottom: 8px;
+    color: #21272A;
 }
 .plan-box ul {
+    margin-top: 30px;
     list-style: none;
 }
 .plan-box ul li {
     font-size: 18px;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     color: var(--plan-price-color);
     display: flex;
     align-items: center;
+    padding: 6px 0;
 }
 .plan-box ul li i {
     margin-left: 10px;
     color: green;
 }
-.plan-box a{
+.plan-box a {
+    width: 100%;
+    font-family: 'Cairo';
+    font-size: 18px;
+    font-style: normal;
+}
+.plan-box a .cta-button {
     width: 100%;
 }
-.plan-box a .cta-button{
-    width: 100%;
-}
-.plan-box a{
+.plan-box a {
     width: 100%;
 }
 .plan-box.vip {
     border-color: var(--plan-border-color);
 }
-.plan-box.vip h3{
+.plan-box.vip h3 {
     font-family: Cairo;
     font-size: 27.9px;
     font-weight: 600;
@@ -438,11 +464,11 @@ nav a.active {
     color: transparent;
     text-align: justify;
 }
-.plan-box.vip h3 img{
+
+.plan-box.vip h3 img {
     width: 28px;
     vertical-align: sub;
 }
-
 /*-----------------------------------*\
  * #FROM-WRAPPER
 \*-----------------------------------*/
@@ -451,7 +477,7 @@ nav a.active {
     margin-top: 80px;
     padding: 40px 0;
     justify-content: space-evenly;
-    background: url("../imags/Frame-form.png") no-repeat center center ;
+    background: url("../imags/Frame-form.png") no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
@@ -477,7 +503,7 @@ nav a.active {
     height: 100px;
     margin-bottom: 10px;
 }
-.form-wrapper .logo p{
+.form-wrapper .logo p {
     color: var(--logo-text-color);
 }
 form {
@@ -489,18 +515,19 @@ form {
 }
 .input-wrapper img {
     position: absolute;
-    right: 10px; 
+    right: 10px;
     top: 35%;
     transform: translateY(-50%);
-    color: var(--button-icon-color); 
-    font-size: 16px; 
+    color: var(--button-icon-color);
+    font-size: 16px;
 }
 form input[type="text"],
 form input[type="email"] {
     width: 100%;
     padding: 10px;
+    font-family: Cairo;
     margin-bottom: 15px;
-    padding: 14px  30px 16px ;
+    padding: 14px 30px 16px;
     border-radius: 12px;
     border: solid 1px var(--input-border-color);
     font-size: 16px;
@@ -518,6 +545,19 @@ form label[for="accept"] {
 }
 form button.cta-button {
     width: 100%;
+}
+.cta-button-from {
+    display: flex;
+    width: 384px;
+    height: 64px;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-family: Cairo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
 }
 /* ======= text ======= */
 .text-wrapper {
@@ -537,7 +577,6 @@ form button.cta-button {
     line-height: 1.4;
     color: var(--logo-text-color);
 }
-
 /*-----------------------------------*\
  * #SECTION-FOOTER
 \*-----------------------------------*/
@@ -559,7 +598,9 @@ form button.cta-button {
     padding: 20px 0px;
     border-bottom: 1px solid #ffffffec;
 }
-.logo-footer, .social-links, .app-links {
+.logo-footer,
+.social-links,
+.app-links {
     flex: 1 1 100%;
     text-align: center;
     margin-bottom: 20px;
@@ -570,17 +611,20 @@ form button.cta-button {
         margin-bottom: 0;
         text-align: justify;
     }
+
     .social-links {
         flex: 2 1 auto;
         text-align: center;
         margin-bottom: 0;
     }
+
     .app-links {
         flex: 1 1 auto;
         text-align: right;
         margin-bottom: 0;
     }
 }
+
 .social-links .links,
 .soclia-icon {
     margin-bottom: 40px;
@@ -634,6 +678,7 @@ form button.cta-button {
     font-size: 17px;
     margin-right: 5px;
 }
+
 .app-links {
     display: flex;
     justify-content: center;
@@ -662,233 +707,291 @@ form button.cta-button {
 /*-----------------------------------*\
  * #MEDIA-RESPONSEVE
 \*-----------------------------------*/
-@media (max-width:1270px){
+@media (max-width:1270px) {
     .form-wrapper {
         margin: 0 0px 0 0
-    }    
+    }
 }
-@media (max-width:1170px){
+
+@media (max-width:1170px) {
     .text-content {
         max-width: 445px;
     }
+
     .logo {
         width: 140px;
     }
+
     .form-wrapper {
         width: 45%;
-    }        
+    }
 }
-@media (max-width:1050px){
+
+@media (max-width:1050px) {
     .text-content h1 {
         font-size: 40px;
     }
+
     .text-content p {
         font-size: 14px;
     }
+
     .image-content img {
         width: 74%;
     }
+
     .cards {
         flex-wrap: nowrap;
         padding: 0 30px;
     }
+
     .card-text li {
         font-size: 20px;
-    }        
+    }
 }
-@media (max-width:1020px){
+@media (max-width:1020px) {
     nav ul {
         display: none;
     }
+
     .section-container {
-       height: 94vh;
+        height: 94vh;
     }
+
     .hero-section {
         flex-direction: column;
         align-items: center;
     }
+
     .image-content {
         justify-content: center;
     }
-    .image-content img{
+
+    .image-content img {
         max-width: 450px;
         margin-top: 30px;
     }
-    .container .cta-button{
+
+    .container .cta-button {
         display: none;
     }
-    .form-wrapper .cta-button{
+
+    .form-wrapper .cta-button {
         display: block;
     }
+
     .text-content {
         max-width: 645px;
     }
-    .container i{
+
+    .container i {
         display: block;
     }
+
     .section-features {
         padding: 0 10px;
     }
+
     .plans-container {
         padding: 20px 5px;
     }
+
     .card {
         padding: 20px 20px 14px;
     }
-    .container-wrapper{
+
+    .container-wrapper {
         padding: 0 35px;
     }
+
     .text-wrapper h2 {
         font-size: 32px;
     }
+
     .text-wrapper p {
         font-size: 18px;
     }
+
     .footer {
         padding: 48px 30px;
     }
-    
+
 }
-@media (max-width:840px){
+@media (max-width:840px) {
     .section-intro h1 {
         font-size: 30px;
     }
+
     .section-intro p {
         font-size: 15px;
     }
+
     .cards {
         display: block;
     }
+
     .card-text {
         width: 90%;
         margin: 0 auto;
         margin-bottom: 70px;
     }
+
     .card-image {
         width: 90%;
         margin: 0 auto;
         margin-bottom: 70px;
     }
+
     .text-wrapper h2 {
         color: var(--secondary-color);
         font-size: 33px;
     }
+
     .text-wrapper p {
         font-size: 19px;
     }
+
     .form-wrapper {
         width: 49%;
         padding: 24px 18px 32px;
         height: 100%;
     }
-        
+
 }
-@media (max-width:530px){
+@media (max-width:530px) {
     .section-intro h1 {
         font-size: 27px;
     }
+
     .section-intro p {
         font-size: 14px;
     }
-    .section-plans h1  {
+
+    .section-plans h1 {
         font-size: 32px;
     }
+
     .section-plans p {
         font-size: 14px;
     }
+
     .card-text li {
         font-size: 17px;
-    }  
+    }
 }
-@media (max-width:676px){
-    .container-wrapper{
+@media (max-width:676px) {
+    .container-wrapper {
         flex-direction: column;
         align-items: center;
     }
+
     .text-wrapper {
         width: 90%;
         margin: 0 auto;
         text-align: center;
     }
+
     .form-wrapper {
         width: 78%;
-    }  
+    }
 }
-@media (max-width:470px){
-    .container{
+@media (max-width:470px) {
+    .container {
         padding: 0 10px;
         justify-content: center;
     }
+
     .container .logo {
         width: 100%;
     }
-    .container-wrapper{
+
+    .container-wrapper {
         padding: 0px 0px;
     }
+
     .text-wrapper h2 {
         font-size: 27px;
     }
+
     .text-wrapper p {
         font-size: 15px;
     }
+
     .text-content h1 {
         font-size: 30px;
     }
+
     .text-content p {
         font-size: 12px;
     }
+
     .hero-section {
         padding: 70px 30px;
     }
+
     .card-text ul {
         margin-right: 0px;
     }
-      .card {
+
+    .card {
         padding: 20px 20px 14px;
     }
+
     .card-text {
         width: 98%;
     }
+
     .card-text li {
         font-size: 15px;
     }
+
     .logo {
         width: 148px;
-    } 
+    }
+
     .form-wrapper {
         padding: 24px 23px 32px;
     }
+
     .form-wrapper {
         width: 90%;
     }
 }
-@media (max-width:320px){
+@media (max-width:320px) {
     .container {
         padding: 0 3px;
     }
-    .container .logo{
+
+    .container .logo {
         margin-right: 72px;
     }
+
     .container i {
         position: relative;
         left: 70px;
     }
+
     .section-container {
         height: 120vh;
     }
+
     .cards {
         flex-wrap: nowrap;
         padding: 0 11px;
     }
+
     .card-text {
         width: 100%;
     }
+
     .card-text li {
         font-size: 14px;
     }
+
     .plan-box {
         padding: 14px 9px 19px;
     }
+
     .footer {
         padding: 48px 10px;
     }
